@@ -1,0 +1,135 @@
+html {
+
+    --font-family-global: Arial, Helvetica, sans-serif;
+    --width-container: 300px;
+    --box-showdown-boder-container: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    --color-input: #f1eeee;
+    --color-button-facebook: #0095f6;
+    --border: 1px solid #d6d4d4;
+    --color-background-linha-divisao: #8e8e8e; 
+    --color-text-facebook: #385185;    
+    
+}
+
+body {
+    font-family: var(--font-family-global);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #fafafa;
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #d6d4d4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--box-showdown-boder-container);
+    border-radius: 5px;
+    width: var(--width-container);
+    margin-top: 80px;
+    
+}
+
+.logo {
+    width: 180px;
+    
+}
+
+.container h1 {
+    font-size: 12px;
+    color: #8e8e8e;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.facebook button {
+    width: 90%;
+    padding: 10px;
+    background-color: var(--color-button-facebook);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+   
+}
+
+.facebook a {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 3px;
+}
+
+.linha {
+    display: flex;
+    margin: 15px 0;
+    align-items: center;
+    color: var(--color-background-linha-divisao);
+}
+
+.linha::before,
+.linha::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid #d6d4d4;
+
+}
+
+.cadastro input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: var(--color-input);
+    border: var(--border);
+}
+
+.resumo p {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.resumo a {
+    text-decoration: none;
+    color: var(--color-text-facebook);
+}
+
+.registrar button{
+    width: 90%;
+    padding: 10px;
+    background-color: var(--color-button-facebook);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.iniciar-sessao {
+    background-color: #fff;
+    border: var(--border);
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--box-showdown-boder-container);
+    border-radius: 5px;
+    width: var(--width-container);
+    margin: 10px 0;
+}
+
+.iniciar-sessao p {
+    display: inline;
+}
+
+.iniciar-sessao a{
+    text-decoration: none;
+    /* font-weight: bold; */
+    color: var(--color-button-facebook);
+    padding-top: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    display: inline;
+}

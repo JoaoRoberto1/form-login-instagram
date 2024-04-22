@@ -1,0 +1,111 @@
+html {
+    --font-family-global: Arial, Helvetica, sans-serif;
+    --width-container: 300px;
+    --box-showdown-boder-container: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    --color-input: #f1eeee;
+    --color-button-facebook: #0095f6;
+    --border: 1px solid #d6d4d4;
+    --color-background-linha-divisao: #8e8e8e; 
+    --color-text-facebook: #385185; 
+}
+
+body {
+    font-family: var(--font-family-global);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #fafafa;
+
+}
+
+.conteiner {
+    background-color: #fff;
+    border: var(--border);
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--box-showdown-boder-container);
+    border-radius: 5px;
+    width: var(--width-container);
+}
+
+.logo_insta{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.login input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: var(--color-input);
+    border: var(--border);
+}
+
+.login button {
+    width: 99%;
+    padding: 10px;
+    background-color: var(--color-button-facebook);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.linha{
+    display: flex;
+    margin: 15px 0px;
+    align-items: center;
+    color: var(--color-background-linha-divisao);
+}
+
+.linha::before,
+.linha::after {
+    content: '';
+    flex: 1;
+    border-top: 1px solid #d6d4d4;
+}
+
+.facebook {
+    margin: 8px;
+}
+
+
+.facebook a {
+    text-decoration: none;
+    color: var(--color-text-facebook);
+    font-weight: bold;
+}
+
+.esqueceu_senha {
+    font-size: 11px;
+    text-decoration: none;
+    color: var(--color-text-facebook);
+}
+
+.cadastre {
+    background-color: #fff;
+    border: var(--border);
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--box-showdown-boder-container);
+    border-radius: 5px;
+    width: var(--width-container);
+    margin: 10px 0;
+}
+
+.cadastre p {
+    display: inline;
+}
+
+.cadastre a {
+    text-decoration: none;
+    color: var(--color-button-facebook);
+    padding-top: 0;
+    margin-top: 0px;
+    margin-bottom: 0;
+    margin-left: 2px;
+    display: inline;
+}
